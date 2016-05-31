@@ -1,5 +1,4 @@
-# After reading the documentation on % and sprintf and before 
-# interpreting this program, I am going to predict the output.
+# I am going to predict the output..
 # The field type character %d indicates that this will be
 # a float/decimal number; 05 indicates that there will be 0
 # characters allowed before the decimal with 5 being allowed
@@ -8,5 +7,8 @@
 
 puts "%05d" % 123
 
-# Output: 00123; %05d must have meant to print 5 characters
-# total and fill in the remaining 'nil' values with 0's.
+# Output: After google, I realize that the format goes as
+# follows: %[flags][width][.precision]type
+# d indicates this will be decimal type
+# 5 corresponds to the number of characters
+# 0 replaces ' '
