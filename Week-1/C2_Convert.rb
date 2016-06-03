@@ -296,7 +296,7 @@ def re_to_c(temperature)
 
   inputContinue()
   STDOUT.flush
-  reamur_menu()
+  reaumur_menu()
 end
 
 def re_to_f(temperature)
@@ -305,7 +305,7 @@ def re_to_f(temperature)
 
   inputContinue()
   STDOUT.flush
-  reamur_menu()
+  reaumur_menu()
 end
 
 def re_to_k(temperature)
@@ -314,7 +314,7 @@ def re_to_k(temperature)
 
   inputContinue()
   STDOUT.flush
-  reamur_menu()
+  reaumur_menu()
 end
 
 def re_to_ra(temperature)
@@ -390,7 +390,7 @@ case menu_select()
   when '4'
     rankine_menu
   when '5'
-    reamur_menu
+    reaumur_menu
   when '6'
     userManuel()
   when '7'
