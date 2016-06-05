@@ -10,13 +10,14 @@
 # >> convert(98).round(6)
 # => 36.666667
 def convert(fahrenheight)
-  (fahrenheight - 32.0) * 5/9
+  (fahrenheight - 32.0) * 5/9r
 end
+alias f_to_c convert
 
 if __FILE__ == $PROGRAM_NAME
   print 'Please enter a temperature to convert to celsius: '
   temperature_in_F = gets.to_f
-  puts 'Your temperature in celsius is %.2f' % convert(temperature_in_F)
+  puts 'Your temperature in celsius is %.2f' % f_to_c(temperature_in_F)
 end
 
 # 3-6: create a method to convert fahrenheight to celsius and return the value
