@@ -3,17 +3,17 @@ def border(number, line_length, decorator = nil)
 end
 
 def multiplication_table(integer, heading = ' ', decorate = nil)
-  line_length = ((integer * integer).to_s.length)
+  line_length = (integer * integer).to_s.length
 
-  table = '' #default value
+  table = '' # default value
   table << heading << "\n" unless heading.empty?
-  table << border(integer, line_length, decorate).to_s if  decorate
+  table << border(integer, line_length, decorate).to_s if decorate
   if integer == 0
     table << " 0\n"
   else
     (1..integer).each do |x|
-      (1.. integer).each do |y|
-        table << "%#{line_length.next}d" % (x * y)
+      (1..integer).each do |y|
+        table << "%#{line_length.next}d" % x * y
       end
       table << "\n"
     end
